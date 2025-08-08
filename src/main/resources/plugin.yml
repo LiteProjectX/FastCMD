@@ -1,0 +1,64 @@
+name: FastCMD
+version: 1.0.0
+main: com.bin.fastcmd.FastCMD
+api-version: 1.16
+description: Virtual command block management plugin
+author: FastCMD Team
+
+commands:
+  fastcmd:
+    description: Main FastCMD command
+    aliases: [fcmd]
+    usage: /<command> <subcommand>
+    permission: fastcmd.use
+
+permissions:
+  fastcmd.*:
+    description: Access to all FastCMD commands
+    default: op
+    children:
+      fastcmd.use: true
+      fastcmd.admin: true
+      fastcmd.create: true
+      fastcmd.run: true
+      fastcmd.delete: true
+      fastcmd.change: true
+      fastcmd.stop: true
+      fastcmd.help: true
+      fastcmd.lang: true
+  fastcmd.use:
+    description: Basic FastCMD usage
+    default: true
+    children:
+      fastcmd.help: true
+      fastcmd.run: true
+  fastcmd.admin:
+    description: Administrative FastCMD commands
+    default: op
+    children:
+      fastcmd.create: true
+      fastcmd.delete: true
+      fastcmd.change: true
+      fastcmd.stop: true
+      fastcmd.lang: true
+  fastcmd.create:
+    description: Create virtual command blocks
+    default: op
+  fastcmd.run:
+    description: Execute virtual command blocks
+    default: true
+  fastcmd.delete:
+    description: Delete virtual command blocks
+    default: op
+  fastcmd.change:
+    description: Modify virtual command blocks
+    default: op
+  fastcmd.stop:
+    description: Stop running command blocks
+    default: op
+  fastcmd.help:
+    description: View help information
+    default: true
+  fastcmd.lang:
+    description: Change plugin language
+    default: op

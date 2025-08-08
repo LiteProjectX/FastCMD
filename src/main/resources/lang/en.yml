@@ -1,0 +1,58 @@
+# English Localization
+prefix: "&6[FastCMD]&r "
+
+commands:
+  help:
+    title: "&6=== FastCMD Help ==="
+    create: "&e/fastcmd create `command` --type:Normal [--name:myblock] [--delay:20] [--disable:5000] [--connected:other] &7- Create virtual command block"
+    run: "&e/fastcmd run --name:myblock &7or&e /fastcmd run myblock &7- Execute virtual command block"
+    delete: "&e/fastcmd delete --name:myblock &7or&e /fastcmd delete myblock &7- Delete virtual command block"
+    change: "&e/fastcmd change --name:myblock [`command`] [--type:Chain] [--delay:10] [--disable:1000] [--connected:other] &7- Modify virtual command block"
+    stop: "&e/fastcmd stop --name:myblock &7or&e /fastcmd stop myblock &7- Stop repeating command block"
+    lang: "&e/fastcmd lang &7- Change language"
+    help: "&e/fastcmd help &7- Show this help menu"
+    types: "&7Command block types: &eNormal, Chain, Repeating"
+    
+  create:
+    success: "&aVirtual command block '&e{name}&a' created successfully!"
+    exists: "&cVirtual command block with name '&e{name}&c' already exists!"
+    no-command: "&cCommand not specified! Use backticks: `command here`"
+    invalid-type: "&cInvalid command block type! Use: Normal, Chain, Repeating"
+    invalid-delay: "&cInvalid delay value! Must be between 0 and {max}"
+    invalid-disable-time: "&cInvalid disable time! Must be between 0 and {max}"
+    connected-not-found: "&cConnected command block '&e{name}&c' not found!"
+    
+  run:
+    success: "&aExecuted virtual command block '&e{name}&a'!"
+    not-found: "&cVirtual command block '&e{name}&c' not found!"
+    no-name: "&cBlock name not specified! Use --name:myblock or old syntax"
+    already-running: "&cVirtual command block '&e{name}&c' is already running!"
+    
+  delete:
+    success: "&aVirtual command block '&e{name}&a' deleted successfully!"
+    not-found: "&cVirtual command block '&e{name}&c' not found!"
+    no-name: "&cBlock name not specified! Use --name:myblock or old syntax"
+    
+  change:
+    success: "&aVirtual command block '&e{name}&a' modified successfully!"
+    not-found: "&cVirtual command block '&e{name}&c' not found!"
+    no-name: "&cBlock name not specified! Use --name:myblock or old syntax"
+    invalid-type: "&cInvalid command block type! Use: Normal, Chain, Repeating"
+    invalid-delay: "&cInvalid delay value! Must be between 0 and {max}"
+    invalid-disable-time: "&cInvalid disable time! Must be between 0 and {max}"
+    connected-not-found: "&cConnected command block '&e{name}&c' not found!"
+    
+  stop:
+    success: "&aVirtual command block '&e{name}&a' stopped!"
+    not-found: "&cVirtual command block '&e{name}&c' not found!"
+    no-name: "&cBlock name not specified! Use --name:myblock or old syntax"
+    not-running: "&cVirtual command block '&e{name}&c' is not running!"
+    
+  lang:
+    changed: "&aLanguage changed to English!"
+    
+errors:
+  no-permission: "&cYou don't have permission to use this command!"
+  invalid-syntax: "&cInvalid syntax! Use /fastcmd help for help."
+  console-only: "&cThis command can only be executed from console!"
+  player-only: "&cThis command can only be executed by players!"

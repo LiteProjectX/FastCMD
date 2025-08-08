@@ -1,0 +1,3 @@
+# Virtual Command Blocks Storage
+# Format: name -> command block data
+virtual-command-blocks: {}

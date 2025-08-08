@@ -1,0 +1,32 @@
+# FastCMD Configuration
+# Language: en (English) or ru (Russian)
+language: en
+
+# Tab completion settings
+tab-completion:
+  enabled: true
+  command-block-types:
+    - "Normal"
+    - "Chain"
+    - "Repeating"
+  common-delays:
+    - "0"
+    - "10"
+    - "20"
+    - "50"
+    - "100"
+  common-disable-times:
+    - "0"
+    - "1000"
+    - "5000"
+    - "10000"
+
+# Command settings
+commands:
+  max-delay: 72000
+  max-disable-time: 72000
+  default-delay: 0
+  default-disable-time: 0
+
+# Debug mode
+debug: false
